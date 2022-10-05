@@ -1,0 +1,211 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s;
+
+    z-index: 10;
+    background-color: transparent;
+
+    .navbar {
+        padding: 0;
+
+        .navbar-brand {
+            padding: 0;
+            margin: 0;
+
+            .img-logo {
+                width: 80px;
+                padding: 0;
+            }
+        }
+
+
+        .nav-item {
+            padding-right: 50px;
+            @include font(13px, 600);
+            line-height: 80px;
+
+            .nav-link {
+                color: $color-1;
+                padding: 0;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $color-purple;
+                }
+            }
+
+        }
+
+        .nav-item:nth-child(6) {
+            padding-right: 0;
+        }
+
+        .nav__menu {
+            align-items: center;
+            justify-content: flex-end;
+
+            &.show {
+                .navbar-nav {
+                    background-color: #FFF;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 20%);
+                    text-align: center;
+
+                    .nav-item {
+                        line-height: 48px;
+                        padding: 0;
+                        border-bottom: 1px solid rgba(0, 0, 0, 20%);
+                    }
+                }
+
+                .header__social {
+                    display: block;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .header__social {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+
+        i {
+            padding-right: 5px;
+        }
+
+        .header__icon {
+            color: black;
+            padding: 0 5px;
+            font-size: 13px;
+            transition: all 0.5s;
+
+            &:hover {
+                color: $color-purple;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        vertical-align: middle;
+        outline: none;
+
+        .navbar-toggler-icon {
+            color: $color-1;
+            font-size: 25px;
+            background-image: none;
+
+            line-height: 1.5em;
+
+            &:hover {
+                color: $color-purple;
+            }
+        }
+    }
+
+
+    &.header__fixed {
+        background-color: $color-white;
+        z-index: 10;
+        height: 48px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 20%);
+
+        .img-logo {
+            display: none;
+        }
+
+        .nav-item {
+            line-height: 48px;
+            @include font(15px, 600);
+        }
+
+        .header__icon {
+            font-size: 15px;
+        }
+    }
+
+}
+
+// reponsive
+@include responsive("medium") {
+    #header {
+        background-color: $color-white;
+
+        .navbar {
+            .navbar-brand {
+                .img-logo {
+                    width: 48px;
+                    padding: 0;
+                }
+            }
+
+            .nav-item {
+                line-height: 48px;
+            }
+
+        }
+
+        &.header__fixed {
+            background-color: $color-white;
+            z-index: 10;
+            height: 48px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 20%);
+
+            .navbar {
+
+                .navbar-brand {
+
+                    .img-logo {
+                        width: 48px;
+                        padding: 0;
+                        display: block;
+                    }
+                }
+
+            }
+
+
+            .nav-item {
+                line-height: 48px;
+                @include font(15px, 600);
+            }
+
+            .header__icon {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@include responsive("large-down") {
+    #header {
+        .navbar {
+            .navbar-brand {
+                .img-logo {
+                    width: 48px;
+                    padding: 0;
+                }
+            }
+
+            .navbar-nav {
+                align-items: center;
+
+                .nav-item {
+                    padding-right: 20px;
+                }
+            }
+        }
+
+        .header__social {
+            margin-left: 20px;
+
+            .header_btn {
+                padding: 10px 20px;
+                margin: 0;
+            }
+        }
+    }
+}

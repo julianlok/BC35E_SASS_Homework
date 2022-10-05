@@ -1,0 +1,57 @@
+.btn__all {
+    padding: 10px 25px;
+    border: 1px solid $color-purple;
+    border-radius: 25px;
+    margin: 5px;
+    color: $color-white;
+    box-shadow: 0 0 0 3rem inset $color-purple;
+    transition: all 0.25s;
+
+    &:hover {
+        box-shadow: 0 0 0 0rem inset $color-purple;
+        color: $color-purple;
+    }
+
+}
+
+.header_btn {
+    @include font(13px, 600);
+}
+
+.header__fixed {
+    .header_btn {
+        padding: 8px 20px;
+        border: 1px solid $color-purple;
+        border-radius: 25px;
+        margin: 5px;
+        @include font(13px, 600);
+        color: $color-white;
+        box-shadow: 0 0 0 3rem inset $color-purple;
+        transition: all 0.25s;
+
+        &:hover {
+            box-shadow: 0 0 0 0rem inset $color-purple;
+            color: $color-purple;
+        }
+
+    }
+}
+
+.btn__footer {
+    margin-top: 10px;
+    color: $color-1;
+    width: 80%;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 0 3rem #fff;
+    transition: all 0.5s;
+    &:hover {
+    color: #fff;
+    box-shadow: inset 0 0 0 1px #fff;
+    }
+
+}

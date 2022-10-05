@@ -1,0 +1,12 @@
+.member {
+    position: relative;
+    padding: $pd-1;
+    background-color: #dcd1f3;
+
+   
+}
+
+.member__bottom {
+    @extend .carousel__footer;
+   
+}

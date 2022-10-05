@@ -1,0 +1,23 @@
+$color-1: #181818;
+$color-2: #191919;
+$color-white: #fff;
+$color-purple: #b61984;
+
+
+
+$pd-1: 30px;
+$pd-2: 60px;
+$pd-3: 120px;
+
+
+
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+    "extra-large-down": 1199.98px,
+    "large-down": 991.98px,
+    "medium-down": 767.98px,
+    "small-down": 575.98px,
+);

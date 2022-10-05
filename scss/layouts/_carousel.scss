@@ -1,0 +1,54 @@
+.carousel {
+ 
+    padding: $pd-2 0;
+
+    .carousel__title {
+       
+        
+        p {
+            @include font(17px, 600);
+            color: $color-purple;
+            margin-bottom: 6px;
+        }
+
+        h1 {
+            font-size: 57px;
+            color: $color-2;
+        }
+
+    }
+}
+
+.carousel__footer {
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.carousel__top {
+    position: absolute;
+   
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+@include responsive("large-down") {
+    .carousel {
+        .carousel__title {
+            p {
+                @include font(15px, 600);
+                color: $color-purple;
+                margin-bottom: 6px;
+            }
+
+            h1 {
+                font-size: 35px;
+                color: $color-2;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.contact {
+    padding-top: $pd-2;
+    position: relative;
+
+    .contact__validation {
+
+        text-align: center;
+
+        .contact__content {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 20%);
+            border-radius: 25px;
+            h2 {
+                @include font(35px, 700)
+            }
+            .input__text {
+                width: 100%;
+                border-radius: 25px;
+                padding: 10px 20px;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 20%);
+            }
+
+            .select__course,
+            .textarea__message {
+                border-radius: 25px;
+                padding: 10px 15px;
+                width: 100%;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 20%);
+            }
+
+
+
+            .contact__btn {
+                padding: 10px 50px;
+            }
+        }
+    }
+
+
+}
+
+.contact__bottom {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

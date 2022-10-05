@@ -1,0 +1,40 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+   
+    100% {
+        opacity: 1;
+        transition-duration: 2s;
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition-duration: 2s;
+
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+.fadeLeft {
+    animation: fadeInLeft 2s;
+
+}
+.delay {
+    animation-delay: 1s;
+}
+
+.animated {
+    animation: fadeIn 3s;
+}
+
+@for $delay from 1 through 8 {
+    .delay-#{$delay} {
+        animation-delay: 400ms * $delay;
+       
+    }
+}
